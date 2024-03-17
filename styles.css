@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
 body {
@@ -14,8 +15,8 @@ body {
 h1 {
     font-size: 5rem;
     color: #33186B;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 2.5rem;
+    
+    padding: 1rem;
 }
 
 .board {
@@ -23,7 +24,7 @@ h1 {
     margin: auto;
     width: 960px;
     height: 960px;
-    background-color: #7360DF;
+    background-color: #33186B;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -43,6 +44,14 @@ h1 {
 .cell {
     background-color: #C499F3;
     flex: 1 1 0%;
-    outline: 1px #7360DF solid;
+    outline: 1px #33186B solid;
     /* flex: 0 0 auto; */
+}
+
+.size-button {
+    padding: .5rem;
+    margin: 1rem;
+    font-size: x-large;
+    background-color: #F2AFEF;
+    color: #33186B;
 }
