@@ -3,24 +3,37 @@
     padding: 0;
   }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .board {
-    padding: 2.5px;
-    margin: 0;
+    padding: 2.5rem;
+    margin: auto;
+    width: 960px;
+    height: 960px;
     background-color: aquamarine;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    
     
 }
 
 .row {
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .cell {
     background-color: blueviolet;
-    width: 100px;
-    height: 100px;
-    flex: 1;
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+    outline: 1px black solid;
     /* flex: 0 0 auto; */
 }
