@@ -5,20 +5,30 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #F2AFEF;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #33186B;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2.5rem;
 }
 
 .board {
-    padding: 2.5rem;
+    padding: 1rem;
     margin: auto;
     width: 960px;
     height: 960px;
-    background-color: aquamarine;
+    background-color: #7360DF;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
+    flex: 1 1 auto;
     
     
 }
@@ -26,14 +36,13 @@ body {
 .row {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
+    flex: 1 1 0%;
 }
 
 .cell {
-    background-color: blueviolet;
-    width: 4rem;
-    height: 4rem;
-    flex-shrink: 0;
-    outline: 1px black solid;
+    background-color: #C499F3;
+    flex: 1 1 0%;
+    outline: 1px #7360DF solid;
     /* flex: 0 0 auto; */
 }
